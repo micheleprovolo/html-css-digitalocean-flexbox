@@ -212,13 +212,25 @@ form {
   padding-bottom: 3%;
 }
 
-#customer li {
-  display: inline-block;
-  width: calc((100% / 6) - 4px);
+.container-flex {
+  display: flex;
+  flex-wrap: wrap;
 }
 
+/*#customer li {
+  display: inline-block;
+  width: calc((100% / 6) - 4px);
+}*/
+
 #customer li img {
-  max-width: 80%;
+  max-width: 70%;
+}
+
+#customer li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: calc(100% / 6);
 }
 
 /* sezione deploy and scale */
@@ -409,6 +421,10 @@ footer a {
     padding-right: 10%;
   }
 
+  #customer li {
+    flex-basis: calc(100% / 3);
+  }
+
   footer {
     padding-left: 5%;
   }
@@ -428,6 +444,10 @@ footer a {
 
   #deploy ul {
     padding-left: 5%;
+  }
+
+  #customer li {
+    flex-basis: calc(100% / 2);
   }
 
   footer {
