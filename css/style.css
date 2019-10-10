@@ -11,7 +11,7 @@ ul {
 }
 
 .row {
-  width: 100%;
+  /* width: 100%; */
   margin-left: 0;
 }
 
@@ -38,14 +38,19 @@ header {
   padding: 1% 2%;
 }
 
-#menu1:after {
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* #menu1:after {
   content: "";
   clear: both;
   display: table;
-}
+} */
 
 .leftcolumn {
-  float: left;
+  /* float: left; */
   width: 50%;
 }
 
@@ -56,58 +61,78 @@ header {
   border-radius: 5px;
   color: #031b4e;
 }
+
 .rightcolumn {
-  float: right;
+  /* float: right; */
   width: 50%;
   padding-left: 35%;
 }
-.rightcolumn li{
+
+/* .rightcolumn li {
   display: inline-block;
   padding-right: 5%;
+} */
+
+.rightcolumn ul {
+  display: flex;
+  justify-content: space-around;
 }
 
 /* navbar due */
-#menu2 {
+  #menu2 {
   padding: 0 2%;
 }
 
-#menu2:after {
+.flex-menu2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+/* #menu2:after {
   content: "";
   clear: both;
   display: table;
-}
+} */
 
 .colonnasx {
-  float: left;
-  width: 20%;
+  /* float: left; */
+  width: 10%;
 }
 
 .colonnasx img {
-  max-width: 60%;
+  max-width: 90%;
 }
 
 .colonna-centrale {
-  float: left;
+  /* float: left; */
   width: 60%;
 }
 
-.colonna-centrale li {
+.colonna-centrale ul {
+  display: flex;
+  justify-content:space-around;
+}
+
+/* .colonna-centrale li {
   display: inline-block;
-  padding-right: 5%;
+  padding-right: 5%; */
 }
 
 .colonnadx {
-  float: right;
-  width: 20%;
-  padding-left: 13%;
+  /* float: right; */
+  width: 30%;
+  /* padding-left: 13%; */
 }
 
 .colonnadx a {
-  padding: 8%;
+  padding: 20px;
   border: 1px solid #0069ff;
   border-radius: 5px;
   font-weight: bold;
   color: #0069ff;
+  display: inline-block;
 }
 
 /* sezione iniziale blu */
@@ -120,23 +145,28 @@ header {
 .hidden-menu {
   display: none;
   width: 100%;
-  padding: 1% 2%;
+  padding: 1% 7%;
 }
 
-.hidden-menu:after {
+.flex3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .hidden-menu:after {
   content: "";
   clear: both;
   display: table;
-}
+} */
 
 .contieni-logo svg {
   fill: #fff;
-  float: left;
+  /* float: left; */
 }
 
 .contieni-hamburger {
   color: white;
-  float: right;
+  /* float: right; */
 }
 
 .regola-dimensioni {
@@ -273,6 +303,14 @@ form {
 #built-for-business h2 {
   text-align: center;
   padding-bottom: 3%;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.flex-item {
+  flex-basis: calc(100% / 4);
 }
 
 /* sezione tabella blu */
@@ -423,6 +461,10 @@ footer a {
 
   #customer li {
     flex-basis: calc(100% / 3);
+  }
+
+  #built-for-business .flex-item {
+    flex-basis: calc(100% / 2);
   }
 
   footer {
